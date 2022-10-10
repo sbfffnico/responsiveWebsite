@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edrich - Lab 4 - Home</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#menubar").slicknav({prependTo: ".slicknav_menu"});
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <img src="images/rsz_dinosaur_img.jpg" alt="image of a toy dinosaur">
+        <h1>Jurassic Park</h1>
+        <h2>My favorite movie.</h2>
+    </header>
+    <nav class="slicknav_menu"></nav>
+    <nav id="menubar">
+        <ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="production.html">Production</a></li>
+            <li><a href="book.html">Book Changes</a></li>
+            <li><a href="castandcrew.html" class="lastItem">Cast &#38; Crew</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>A movie that has withstood the test of time.</h2>
+            <p>
+                Jurassic Park is a movie based upon a book by Michael Crichton of the same name written in 1990.  The movie came out three years later in 1993 directed by Steven Spielberg. This was a movie so intriguing that it almost sent me into the world of paleontology instead of computers. The goal of this website is to give you my insight into the movie as well as provide some unknown facts about the movie and series as a whole.  I hope you enjoy it.
+            </p>
+            <h3>Just a heads up...</h3>
+            <p>
+                This website will be mostly focusing on the first Jurassic Park movie.  There may be some references to the second and third, but most likely will not include any of the new Jurassic World series starring Chris Pratt. As of this writing while I ponder what I will include next, I remind myself to not be so preoccupied with whether or not I <strong>could</strong>, but to stop and think whether or not I <strong>should</strong>.
+            </p>
+        </section>
+        <aside>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Jurassic_Park">Wikipedia</a></li>
+                <li><a href="https://www.imdb.com/title/tt0107290/?ref_=fn_al_tt_1">IMDB</a></li>
+                <li><a href="https://www.rottentomatoes.com/m/jurassic_park">Rotten Tomatoes</a></li>
+                <li><a href="https://www.foliosociety.com/usa/jurassic-park.html">The Folio Society</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>© 2022 Nico Edrich</p>
+    </footer>
+</body>
+</html>

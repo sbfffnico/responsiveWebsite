@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edrich - Lab 4 - Production</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#menubar").slicknav({prependTo: ".slicknav_menu"});
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <img src="images/rsz_dinosaur_img.jpg" alt="image of a toy dinosaur">
+        <h1>Jurassic Park</h1>
+        <h2>My favorite movie.</h2>
+    </header>
+    <nav class="slicknav_menu"></nav>
+    <nav id="menubar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="production.html" class="current">Production</a></li>
+            <li><a href="book.html">Book Changes</a></li>
+            <li><a href="castandcrew.html" class="lastItem">Cast &#38; Crew</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>A real dinosaur attack</h2>
+            <p>During the last few weeks of production, one set worker was handling some touch up to the now famous animatronic Tyrannosaurus Rex.  Due to the nature of its hydraulic, the Rex needed to be powered up for it to remain in a position that allowed for the necessary work to be completed.  Unfortunately, someone else on set had not realized anyone was inside working and had killed the power.  Panic flowed across the set as everyone moved quickly to rescue the worker. Three crewman pried open the jaws of the Rex and saved the work from becoming a statistic of 20th century dino attack.</p>
+            <h3>Not the only incident</h3>
+            <div>
+                <figure>
+                    <img src="images/production.PNG" alt="image of a clapperboard">
+                    <figcaption>A clapperboard.</figcaption>
+                </figure>The production of Jurassic Park had many on set horror moments.  One such moment was during a rainstorm, where water caused a malfunction and seemingly brought the monstrous dinosaur to life.
+            </div>
+            <p>The cast and crew also had to deal with the wrath of Hurricane Iniki rampaging down on them in Hawaii.</p>
+        </section>
+        <aside>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Jurassic_Park">Wikipedia</a></li>
+                <li><a href="https://www.imdb.com/title/tt0107290/?ref_=fn_al_tt_1">IMDB</a></li>
+                <li><a href="https://www.rottentomatoes.com/m/jurassic_park">Rotten Tomatoes</a></li>
+                <li><a href="https://www.foliosociety.com/usa/jurassic-park.html">The Folio Society</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>© 2022 Nico Edrich</p>
+    </footer>
+</body>
+</html>

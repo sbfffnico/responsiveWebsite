@@ -1,0 +1,208 @@
+/* remove any default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* styles for html */
+html {
+    background-color: white;
+}
+
+/* styles for the body */
+body {
+    font-family: Avantgarde, "TeX Gyre Adventor", "URW Gothic L", sans-serif;
+    width: 98%;
+    max-width: 960px;
+    border: 5px solid #dea720;
+    box-shadow: 10px 10px #615b04;
+    margin: 0 auto;
+}
+
+/* styles for the header */
+header {
+    padding: 1em 1em 4.5em 1em;
+    border-bottom: 2px solid #dea720;
+    background-color: #9c9b14;
+}
+header img {
+    float: left;
+    height: 200px;
+    width: 200px;
+    padding: 0 1em 0 0;
+}
+header h1 {
+    padding: 1.5em 0 0.25em 0;
+}
+header h2 {
+    padding: 0 0 1em 0;
+}
+
+/* styles for the nav bar */
+#menubar ul {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+#menubar ul li {
+    /*float: left; TO BE REMOVED */
+    flex-basis: 25%;
+}
+#menubar ul li a {
+    color:black;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    flex-basis: 25%;
+    /*width: 237px; /* 954/4 (960px *width of body* - 12px *length of three borders* divided by 4 *number of options*) */
+    padding: 1em 0;
+    background-color: #d5d541;
+    font-weight: bold;
+    border-right: 4px solid #e3e21d;
+}
+#menubar ul li a.lastItem {
+    border-right: none;
+}
+#menubar ul li a.current {
+    color: #522500;
+}
+#menubar ul li a:focus,#menubar ul li a:hover{
+    background-color: #fffb00;
+    color: #866503;
+}
+/*
+#menubar ul li a:focus{
+    background-color: #fffb00;
+    color: #866503;
+}
+ */
+
+    /* styles for main */
+main{
+    background-color: #e3e21d;
+    padding: 0 0.5em 0.5em 0.5em;
+    /*float:right;  parent must be floated or it will collapse when child floats - TO BE REMOVED */
+    display: flex;
+}
+main section{
+    /*float: right; TO BE REMOVED */
+    /* width: 75%; TO BE REMOVED */
+    flex-basis: 75%;
+    order: 2;
+}
+section h2:first-of-type::first-letter {
+    font-size: 1.5em;
+}
+section h2 {
+    padding: 1em 0.5em 0.5em 0.5em;
+}
+section h3,p {
+    padding: 0.5em;
+}
+section p.right {
+    /* float: right; TO BE REMOVED */
+}
+section figure {
+    float: left;
+    padding-left: 0.6em;
+    padding-right: 0.5em;
+}
+section figure img {
+    height: 100px;
+    width: 100px;
+}
+section figure figcaption {
+    font-size: 80%;
+    text-align: center;
+}
+main aside {
+    /* float: left; TO BE REMOVED */
+    /* width: 25%; TO BE REMOVED*/
+    flex-basis: 25%;
+    order: 1; /* priority should be left */
+}
+main aside ul {
+    list-style-type: none;
+    padding-top: 2em;
+}
+main aside ul li {
+    margin-bottom: 0.5em;
+    width: 98%;
+}
+main aside a{
+    text-decoration: none;
+    border: 3px solid #dea720;
+    display: block;
+    font-weight: bold;
+    padding-left: 0.75em;
+    background-color: #d5d541
+}
+main aside a:hover,main aside a:focus {
+    background-color: #dea720;
+    color: #8c6204;
+}
+
+/* styles for the footer */
+footer{
+    font-size: 0.66em;
+    text-align: center;
+    border-top: 2px solid #dea720;
+    background: linear-gradient(45deg,#e3e21d 0%,#9c9b14 25%,#e3e21d 50%,#9c9b14 75%);
+    clear: both;
+}
+
+/* hide mobile menu */
+.slicknav_menu {
+    display: none;
+}
+
+/* 767px or less - mobile landscape */
+@media only screen and (max-width: 767px) {
+    header {
+        text-align: center;
+        padding: 0;
+    }
+    header img {
+        float: none;
+        padding: 0;
+    }
+    main {
+        flex-direction: column;
+    }
+    main section, main aside {
+        width: 95%;
+    }
+    main section {
+        order: 1;
+    }
+    main aside {
+        order: 2;
+        margin: 0 auto;
+        text-align: center;
+    }
+    main aside a {
+        padding: 0;
+    }
+    #menubar {
+        display:none;
+    }
+    .slicknav_menu{
+        display: block;
+        background-color: #d5d541 !important;
+    }
+    .slicknav_nav a {
+        color: black !important;
+    }
+}
+
+/* 479px or less - mobile portrait */
+@media only screen and (max-width: 479px) {
+    body{
+        font-size: 85%;
+    }
+}
+
+
+
