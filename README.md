@@ -1,11 +1,11 @@
 # responsiveWebsite
 Project for responsive website
 
-To run:
-Download the folder
-Extract file if necessary
-Open index.html
-Project needs no further setup
+To run:<br />
+Download the folder<br />
+Extract file if necessary<br />
+Open index.html<br />
+Project needs no further setup<br />
 
 ![index](https://user-images.githubusercontent.com/25241345/194803990-b7ddb7c4-52ba-40a7-9575-2ff6f0feade0.JPG)
 ![production](https://user-images.githubusercontent.com/25241345/194803991-75ee685b-9a68-4000-a30f-0617956a8b0f.JPG)
